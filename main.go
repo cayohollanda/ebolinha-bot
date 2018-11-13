@@ -43,7 +43,11 @@ func messageHandler(session *discordgo.Session, message *discordgo.MessageCreate
 		return
 	}
 
-	fmt.Printf("Message: %+v || From: %s\n", message.Message.Content, user)
+	if message.Content == prefix+"ping" {
+		session.ChannelMessageSend(message.ChannelID, "Pong")
+	}
+
+	// fmt.Printf("Message: %+v || From: %s\n", message.Message.Content, user)
 }
 
 func connected(session *discordgo.Session, ready *discordgo.Ready) {
