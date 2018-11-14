@@ -7,7 +7,7 @@ import (
 )
 
 // Token for bot access
-const token string = "NTExMTk1MzY5MjYzMzMzNDE0.Dso6Pg.jdXd-o0m-exc6y1IR54xVVu5CBA"
+const token string = "<YOUR BOT KEY>"
 
 // Prefix of commands
 const prefix string = "!"
